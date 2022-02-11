@@ -584,6 +584,10 @@
   margin-left: 30px;
 }
 
+.form-fields-wrapper input {
+  font-size: 16px;
+}
+
 .form-fields-wrapper input::-webkit-input-placeholder {
   font-size: 16px;
   line-height: 19px;
@@ -617,6 +621,8 @@
 }
 
 .form-fields-wrapper textarea {
+  font-family: Inter;
+  font-size: 16px;
   mix-blend-mode: normal;
   border: 2px solid #2828281A;
   -webkit-box-sizing: border-box;
