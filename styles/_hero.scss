@@ -1,0 +1,64 @@
+.hero {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    margin-bottom: 109px;
+    &-img {
+        width: 64.2%;
+        position: relative;
+        @include big_tablet {
+            width: 100%;
+        }
+    }
+    &-img::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(268.8deg, rgba(255, 255, 255, 0) 0.87%, rgba(255, 255, 255, 0.397924) 46.17%, #FFFFFF 98.97%);
+    }
+    &-img img {
+        display: block;
+        width: 100%;
+    }
+    &-text {
+        position: absolute;
+        top: 50%;
+        left: 165px;
+        transform: translateY(-50%);
+        width: 40%;
+        @include laptop {
+            left: 100px;
+        }
+        @include big_tablet {
+            display: none;
+        }
+        // when tablet it will be flex column
+        &-title {
+            font-weight: bold;
+            font-size: 54px;
+            // font-size: 3.75vw;
+            line-height: 72px;
+            color: #0C939A;
+        }
+        &-detail {
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 28px;
+            color: #282828;
+            margin: 10px 0 37px 0;
+        }
+
+        button {
+            padding: 18px 48px;
+            background: linear-gradient(98.24deg, #23ACA6 6.11%, #34589B 145.59%);
+            border-radius: 5px;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 24px;
+            color: #FFFFFF;
+            border: none;
+        }
+    }
+}

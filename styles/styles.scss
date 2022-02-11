@@ -1,0 +1,39 @@
+@import 'navbar';
+@import 'nav-content';
+@import 'hero';
+@import 'activity';
+@import 'expand';
+@import 'form';
+@import 'footer';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Inter;
+    font-style: normal;
+}
+
+.show {
+    display: block;
+}
+
+.show-flex {
+    height: 100%;
+    opacity: 1;
+    transition: all 350ms ease;
+    padding-block-end: 109px;
+    // if you want height animation, you'd apply transform: scaleY(1)
+}
+
+.hide {
+    display: none;
+}
+
